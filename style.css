@@ -1,0 +1,35 @@
+
+.top {
+    background-color: white;
+    text-align: center;
+}
+
+
+
+/* styling the game container */
+#game-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 500px;
+    height: 500px;
+    border: 2px solid #333;
+    background-color: #f3e2e2;
+}
+
+/* styling each cell */
+.cell {
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+.snake {
+    background-color: blue;
+}
+
+.food {
+    background-color: red;
+}
+

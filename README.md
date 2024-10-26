@@ -22,8 +22,26 @@ User Stories
    - notification box that says "Game Over" appears when one of the game over criterias is 
 11. As a player, I want to restart the game after a game over.
 
-
-
 Wireframe
 
 Model / State
+
+Thought Process-----------------------------------------------------------------------------------------------------
+
+1. create gameContainer div, put id="game-container" --> call this getElementbyId in app.js
+
+1. create grid, each cell is a div. use loop to add to gameContainer 
+- for each row, for every column, create a div, add to
+- limit the length and width to 20 --> store in a constant at the start
+
+1. create getIndex function to access the grid array by the (x, y)
+
+1. put snake at initial position/subsequent snake position/ 
+
+array of objects with (x, y). start with 3 elements. to render, use a for loop, get the index in the array of "snake" using a function, call the x and y inside the getIndex function. call the array of "cells"'s index to refer to the div with that index, name them class="snake". so in CSS, only those divs with the class snake will be colored. so everytime you render, need to delete every div's class FIRST before coloring the snake. how to handle lengthening snake?
+
+1. render food:
+same as rendering a snake, but without a loop needed as it only needs to occupy 1 spot. add class name "food" to the index of "cells" grid. in CSS, color the div with the class food.
+
+1. how to move snake:
+direction --> use eventlistener and change the direction up down left right --> manipulate the index of the snake divs in the "Cells" container (x, y) of the snake 
