@@ -1,35 +1,110 @@
 
-.top {
-    background-color: white;
-    text-align: center;
-}
+/* .top { */
+    /* background-color: white; */
+    /* text-align: center; */
+/* } */
 
-
-
-/* styling the game container */
+/* 
+Container for the game 
 #game-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
     border: 2px solid #333;
-    background-color: #f3e2e2;
+    background-color: #eee;
 }
+*/
 
-/* styling each cell */
+/* 
+Individual cell styling 
 .cell {
-    width: 100px;
-    height: 100px;
+    width: 20px;
+    height: 20px;
     box-sizing: border-box;
-    background-color: white;
+    background-color: blue;
+}
+*/
+
+/* Styling for snake and food 
+.snake {
+    background-color: green;
 }
 
-.snake {
+.food {
+    background-color: red;
+}
+*/
+
+/* ------------------------------------------------------------------------- */
+
+/* Center the game container */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    margin: 0;
+}
+
+/* Container for messages */
+#message-container {
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: #333;
+}
+
+/*
+#hello-message, #win-message, #lose-message {
+    display: none; Hide messages by default
+}
+*/
+
+/* Centered game grid */
+#game-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+    height: 400px;
+    border: 2px solid #333;
+    background-color: #eee;
+    margin: 0 auto;
+}
+
+/* Individual cell styling */
+.cell {
+    width: 20px;
+    height: 20px;
+    box-sizing: border-box;
     background-color: blue;
+}
+
+/* Styling for snake and food */
+.snake {
+    background-color: green;
 }
 
 .food {
     background-color: red;
 }
 
+.btnSect {
+    display: flex;
+    flex-direction: row;
+    width: 250px;
+    justify-content: space-evenly;
+  }
+  #btnReset {
+    background-color: antiquewhite;
+  }
+  
+  #btnLevelUp {
+    background-color: blueviolet;
+  }
+  
+  #btnLevelDown {
+    background-color: aqua;
+  }
+  

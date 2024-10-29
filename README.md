@@ -45,3 +45,6 @@ same as rendering a snake, but without a loop needed as it only needs to occupy 
 
 1. how to move snake:
 direction --> use eventlistener and change the direction up down left right --> manipulate the index of the snake divs in the "Cells" container (x, y) of the snake 
+
+1. how to reset game:
+

@@ -1,17 +1,46 @@
+<!--  
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Snakey Snake v2 Game</title>
-    <script defer src="app.js"></script>
+    <script defer src="app1.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="top">Welcome to Snakey Snake Game</div>
-    <div class="top">Win: Snake Reaches xxx Units</div>
-    <div class="top">Lose: Snake Bites into Itself</div>
-    <div></div>
+    <div class="top">Win: Snake Reaches xxx Units</div> 
+    <div class="top">Lose: Snake Bites into Itself</div> 
     <div id="game-container"></div>
+</body>
+</html>
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snakey Snake v2 Game</title>
+    <script defer src="live.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="message-container">
+        <div id="hello-message">Hello</div>
+        <div id="win-message">Win: Snake reached max length!</div>
+        <div id="lose-message">Lose: Snake bit itself!</div>
+    </div>
+    <div id="game-container"></div>
+    <div class="btnTitleSect">
+        <p>Choose:</p>
+    </div>
+    <div class="btnSect">
+        <button id="btnReset" class="btnBtn">Reset</button> 
+        <button id="btnLevelUp" class="btnBtn">Level UP!</button> 
+        <button id="btnLevelDown" class="btnBtn">Level DOWN!</button> 
+    </div>
 </body>
 </html>
